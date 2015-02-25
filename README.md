@@ -7,14 +7,14 @@ The quickest way to start and publish your Jekyll powered blog. 100% compatible 
 ## Usage
 
 ### 1. Create a Repo
-- Go to <https://github.com> and create a new repository named *USERNAME.github.com*  
+- Go to <https://github.com> and create a new repository named *USERNAME.github.io*  
 
 ### 2. Install Jekyll-Bootstrap-3  
 <pre>
   <code>
-    $ git clone https://github.com/dbtek/jekyll-bootstrap-3 USERNAME.github.com
+    $ git clone https://github.com/dbtek/jekyll-bootstrap-3 USERNAME.github.io
     $ cd USERNAME.github.com
-    $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
+    $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
     $ git push origin master  
   </code>
 </pre>  
