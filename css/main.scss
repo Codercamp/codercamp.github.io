@@ -83,7 +83,6 @@ body > div.container {
 
 .info {
     margin-left: 12px;
-    color: #666;
 }
 
 //==============================
@@ -91,7 +90,7 @@ body > div.container {
 //==============================
 
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: rotate(5deg) scale(1.1); }
+.grow:hover { transform: rotate(3deg) scale(1.1); }
 
 .full {
     width: 100%;
