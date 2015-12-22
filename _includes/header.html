@@ -1,0 +1,25 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" title="{{ site.tagline }}">
+            <div class="grow">        
+                <p><i class="fa fa-code"></i> {{ site.title }}</p>
+            </div>
+        </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="mailto:codercamphamilton@gmail.com"><i class="fa fa-envelope-o"></i> Contact</a></li>
+            <li><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://github.com/{{ site.author.github }}" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+            <li><a href="{{ " /feed.xml " | prepend: site.baseurl }}" title="Subscribe via RSS"><i class="fa fa-rss"></i></a></li>
+        </ul>
+    </div><!--/.nav-collapse -->
+    </div>
+</nav>
