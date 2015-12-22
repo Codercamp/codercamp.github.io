@@ -1,11 +1,11 @@
 ---
 layout: default
-title: CoderCamp Hamilton
+title: CoderCamp Hamilton, Ontario
 icon: fa-code
 tagline: Hamilton, Ontario
 ---
 
-<div class="jumbotron hidden-xs">
+<div class="jumbotron">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -36,8 +36,15 @@ tagline: Hamilton, Ontario
         
         {% for post in site.posts %}
         <div class="row">
-            <div class="col-sm-12">
-               <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+            <div class="col-sm-4">
+                <h3 class="index-post"><a href="{{ post.url }}" title="More info on {{post.title}}"><i class="fa fa-code"></i> {{ post.title }}</a></h3>
+            </div>
+            <div class="col-sm-6">
+                    <p class="index-info"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}{% if post.time %}&nbsp;&nbsp; <i class="fa fa-clock-o"></i> {{ post.time }}{% endif %}<br />
+                <i class="fa fa-map-marker"></i> {{ post.location }}</p>
+            </div>
+            <div class="col-sm-2 index-register">
+                {% if post.register %}<a class="btn btn-success" href="{{post.register}}"><i class="fa fa-sign-in"></i> Register</a>{% endif %}
             </div>
         </div>
         {% endfor %}

@@ -6,16 +6,34 @@ layout: default
         <article itemscope itemtype="http://schema.org/BlogPosting">
 
             <header>
-                <h1 itemprop="name headline">{{ page.title }}</h1>
-                <p>
-                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-                    {% if page.author %}
-                     • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-                    {% endif %}</p>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h1><i class="fa fa-code"></i> {{ page.title }}</h1>
+                        <p class="info"><i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}{% if page.time %}&nbsp;&nbsp; <i class="fa fa-clock-o"></i> {{ page.time }}{% endif %}<br />
+                        <i class="fa fa-map-marker"></i> {{ page.location }}</p>
+                    </div>
+                    <div class="col-sm-2 register">
+                        {% if page.register %}<a class="btn btn-success" href="{{page.register}}"><i class="fa fa-sign-in"></i> Register</a>{% endif %}
+                    </div>
+                </div>
             </header>
 
             <div itemprop="articleBody">
-                {{ content }}
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3><i class="fa fa-user"></i> Speakers</h3>
+                        {{ content }}                       
+                    </div>
+                    <div class="col-sm-6">
+                        <h3><i class="fa fa-info-circle"></i> Info</h3>
+                        <p>Interested in giving a presentation? You can show up on the evening and hope there is time for your talk, 
+                            or you can email <a href="mailto:codercamphamilton@gmail.com">codercamphamilton@gmail.com</a> and we’ll add you to the list of scheduled talks.</p>
+
+                        {% if page.register %}
+                        <p>Please register. If enough people are coming then we need to tell the bar to bring in another staff member.</p>
+                        {% endif %}    
+                    </div>
+                </div>            
             </div>
 
         </article>
