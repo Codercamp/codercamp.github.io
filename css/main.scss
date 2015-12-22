@@ -56,15 +56,27 @@ $color-complement-4: #051600;
 
 .index-post {
     margin: 10px 0 5px 0;
-    color: #666;
 }
 
 .index-info {
+    color: #666;
     margin: 10px 0 5px 0;    
 }
 
 .index-register {
     margin: 10px 0 5px 0;    
+}
+
+//==============================
+// Events
+//==============================
+.events-post {
+    font-size: 120%;
+}
+
+.events-info {
+    font-size: 80%;   
+    color: #666; 
 }
 
 //==============================
@@ -75,7 +87,7 @@ body > div.container {
 }
 
 //==============================
-// Posts
+// Event Page
 //==============================
 .register {
     margin-top: 30px;
