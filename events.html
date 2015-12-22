@@ -1,0 +1,34 @@
+---
+layout: default
+title: CoderCamp Hamilton, Ontario
+icon: fa-code
+tagline: Hamilton, Ontario
+---
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1><i class="fa fa-code"></i> Past Events</h1>      
+      </div>
+    </div>
+  </div>
+</div>        
+        
+<div class="container">
+    <div class="content">
+        <table class="table table-striped"><tbody>
+        {% for post in site.posts %}
+        <tr>
+            <td>
+                <div class="events-post"><a href="{{ post.url }}" title="More info on {{post.title}}"><i class="fa fa-code"></i> {{ post.title }}</a></div>
+            </td>
+            <td>
+                <div class="events-info"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}{% if post.time %}&nbsp;&nbsp; <i class="fa fa-clock-o"></i> {{ post.time }}{% endif %}<br />
+                <i class="fa fa-map-marker"></i> {{ post.location }}</div>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody></table>
+    </div>
+</div>

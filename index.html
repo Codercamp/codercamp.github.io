@@ -34,7 +34,7 @@ tagline: Hamilton, Ontario
         <h2><i class="fa fa-calendar-check-o"></i> Events</h2>
         
         
-        {% for post in site.posts %}
+        {% for post in site.posts limit:1 %}
         <div class="row">
             <div class="col-sm-4">
                 <h3 class="index-post"><a href="{{ post.url }}" title="More info on {{post.title}}"><i class="fa fa-code"></i> {{ post.title }}</a></h3>
