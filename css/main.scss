@@ -160,11 +160,13 @@ p.text-muted > a:hover, p.text-muted > a:visited {
     background-size: cover;
     height: 100%;
     min-height: 100%;
-    margin: 50px 0 50px 0;
+    margin: 0;
     padding: 0;
 }
 
 .goats-title {
     font-size: 300%;
-    color: white;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
 }
