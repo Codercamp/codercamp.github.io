@@ -1,5 +1,6 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:day/:title
+future: true
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
