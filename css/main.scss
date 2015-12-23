@@ -60,7 +60,8 @@ $color-complement-4: #051600;
 
 .index-info {
     color: #666;
-    margin: 10px 0 5px 0;    
+    margin: 10px 0 5px 5px;    
+    font-size: 80%;
 }
 
 .index-register {
@@ -127,7 +128,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;
-  background-color: $color-primary-4;
+  background-color: $color-secondary-1-4;
 }
 
 .footer > .container {
@@ -138,4 +139,12 @@ body {
 .container .text-muted {
   margin: 15px 0;
   color: lighten($gray-base, 77.7%);
+}
+
+p.text-muted > a {
+    color: #bbb;
+}
+
+p.text-muted > a:hover, p.text-muted > a:visited {
+    color: #ccc;
 }
