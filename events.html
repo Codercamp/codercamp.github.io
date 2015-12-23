@@ -24,7 +24,7 @@ tagline: Hamilton, Ontario
                 <div class="events-post"><a href="{{ post.url }}" title="More info on {{post.title}}"><i class="fa fa-code"></i> {{ post.title }}</a></div>
             </td>
             <td>
-                <div class="events-info"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}&nbsp;&nbsp; <i class="fa fa-clock-o"></i> {{ post.time }}<br />
+                <div class="events-info"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}{% if post.time %} &nbsp;&nbsp;<i class="fa fa-clock-o"></i> {{ post.time }}{% endif %}<br />
                 <i class="fa fa-map-marker"></i> {{ post.location }}</div>
             </td>
         </tr>
