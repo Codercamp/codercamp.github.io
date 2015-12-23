@@ -1,37 +1,13 @@
-# Jekyll-Bootstrap-3
+# CoderCamp Hamilton website
 
-Easily publish Bootstrap 3 powered Jekyll sites.  
-Fork of the well known jekyll-bootstrap (v0.3.0). Original project is [here](https://github.com/plusjade/jekyll-bootstrap).  
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages.  
+## Installing Jekyll
 
-## Usage
+1. Install Ruby 2.1 ([Linux](https://www.ruby-lang.org/en/documentation/installation/), [Mac](https://gorails.com/setup/osx/10.10-yosemite), [Windows](http://rubyinstaller.org/))
+2. If you are on Windows, install [DevKit](http://rubyinstaller.org/add-ons/devkit/)
+3. `gem install jekyll`
+4. `gem install bundler`
 
-### 1. Create a Repo
-- Go to <https://github.com> and create a new repository named *USERNAME.github.io*  
+## Initializing the project
 
-### 2. Install Jekyll-Bootstrap-3  
-<pre>
-  <code>
-    $ git clone https://github.com/dbtek/jekyll-bootstrap-3 USERNAME.github.io
-    $ cd USERNAME.github.com
-    $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
-    $ git push origin master  
-  </code>
-</pre>  
-### 3. Enjoy !
-- After giving 10 mins to GitHub of course.  
-
-For original project's usage and documentation please see: <http://jekyllbootstrap.com>  
-
-
-### Themes
-
-Quickly install and use lovely themes with Jekyll Bootstrap 3. Visit [theme gallery](http://jekyllbootstrap3.tk/preview/).
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/jekyll-bootstrap-3/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+1. `bundle install`
+2. `jekyll serve`
