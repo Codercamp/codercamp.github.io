@@ -38,8 +38,23 @@ $color-complement-4: #051600;
         "syntax-highlighting"
 ;
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+  min-width: 320px;
+}
+
 .content {
   padding: 40px 15px;
+}
+
+.navbar {    
+  min-width: 320px;
 }
 
 //==============================
@@ -112,15 +127,6 @@ body > div.container {
 //==============================
 // Footer
 //==============================
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 50px;
-}
 
 .footer {
   position: absolute;
