@@ -115,6 +115,7 @@ body > div.container {
 html {
   position: relative;
   min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -147,4 +148,25 @@ p.text-muted > a {
 
 p.text-muted > a:hover, p.text-muted > a:visited {
     color: #ccc;
+}
+
+//==============================
+// Footer
+//==============================
+
+.goats {
+    background-image: url('/img/404.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.goats-title {
+    font-size: 300%;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
 }
