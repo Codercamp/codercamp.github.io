@@ -1,8 +1,10 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:year/:month/:day/:title
+permalink: /Events/:year/:month/:day/:title
+
+# Shows events with dates in the future
 future: true
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".gitignore", "CNAME", "README.md", "Gemfile"]
 highlighter: pygments
 
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
@@ -20,3 +22,6 @@ author :
   github : codercamp
   twitter : Codercamp
 #  feedburner : feedname
+
+# This is used in the Atom & RSS feeds and in the sitemap
+production_url: http://www.codercamphamilton.com

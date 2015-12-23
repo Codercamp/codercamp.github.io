@@ -14,7 +14,11 @@ tagline: Hamilton, Ontario
     </div>
     <div class="row">
       <div class="col-sm-12">            
-        <p>CoderCamp was born from the spirit of BarCamp, and has evolved into a monthly mini-conference. CoderCamp is for local software developers to learn tools, techniques, and technologies from one another in a casual and friendly setting. We meet to talk about coding, software development, and technology to learn from each other and get better at what we do in the process.</p>
+        <p>CoderCamp Hamilton was born from the spirit of BarCamp, and has evolved into a monthly mini-conference. 
+           CoderCamp is for local software developers to learn tools, techniques, and technologies from 
+           one another in a casual and friendly setting. <span class="hidden-xs">We meet to talk about 
+           coding, software development, and technology to learn from each other and get better at 
+           what we do in the process.</span></p>
       </div>
     </div>
   </div>
@@ -23,21 +27,33 @@ tagline: Hamilton, Ontario
 <div class="container">
     <div class="content">
         <div class="row">
-            <div class="col-sm-6">
-                <h2><i class="fa fa-info-circle"></i> About CoderCamp</h2>    
+            <div class="col-md-6">
+                <h2><i class="fa fa-info-circle"></i> About CoderCamp Hamilton</h2>    
                 
-                <p>CoderCamp meets monthly in local pubs in Hamilton, Ontario. We are an offshoot of <a href="http://www.softwarehamilton.com/">Software Hamilton</a>, an organization dedicated to connecting Greater Hamilton's software and startup communities.</p>
+                <p>CoderCamp meets monthly in local pubs in Hamilton, Ontario. We are an offshoot of 
+                    <a href="http://www.softwarehamilton.com/">Software Hamilton</a>, an organization 
+                    dedicated to connecting Greater Hamilton's software and startup communities.</p>
                 
-                <p>We have a projector and screen set up for people to give presentations. We try to have a few speakers lined up in advance to give the event structure, but there is usually room for “open mic” presentations or discussions if you’re interested in sharing. We welcome you to come, talk, discuss, share, or just sit quietly and listen.</p>
+                <p>We have a projector and screen set up for people to give presentations. We try to 
+                    have a few speakers lined up in advance to give the event structure, but there is 
+                    usually room for “open mic” presentations or discussions if you’re interested in 
+                    sharing. We welcome you to come, talk, discuss, share, or just sit quietly and listen.</p>
                 
-                <p>We are an inclusive group that welcomes students, professional developers, freelancers and entrepreneurs. Come out and help build a strong tech community in Hamilton.</p>
+                <p>We are an <a href="/conduct.html">inclusive group</a> that welcomes students, 
+                professional developers, freelancers and entrepreneurs. Come out and help build a strong 
+                tech community in the Greater Hamilton area.</p>
                 
-                <p>CoderCamp is organized by <a href="http://www.twitter.com/AJBovaird">AJ Bovaird</a> and <a href="http://www.twitter.com/bpoetz">Bryan Poetz</a>, but CoderCamp depends on the tech community in Hamilton for support and talks. If you
-                are working on something cool or have something you would like to talk about, we would love to <a href="mailto:codercamphamilton@gmail.com">hear from you</a>.</p>
+                <p>CoderCamp Hamilton is organized by <a href="http://www.twitter.com/AJBovaird">AJ Bovaird</a> 
+                and <a href="http://www.twitter.com/bpoetz">Bryan Poetz</a>, but CoderCamp depends on the 
+                tech community in Hamilton for support and talks. If you are working on something cool or 
+                have something you would like to talk about, we would love to 
+                <a href="mailto:codercamphamilton@gmail.com">hear from you</a>.</p>                        
                 
-                <p class="text-right"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
+                <p class="text-right hidden-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
+                <p class="visible-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
+                
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <h2><i class="fa fa-calendar-check-o"></i> Upcoming Events</h2>                
                 
                 {% for post in site.posts limit:1 %}
@@ -47,9 +63,14 @@ tagline: Hamilton, Ontario
                         <p class="index-info"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}{% if post.time %}&nbsp;&nbsp; <i class="fa fa-clock-o"></i> {{ post.time }}{% endif %}<br />
                         <i class="fa fa-map-marker"></i> {{ post.location }}</p>
                     </div>
-                    <div class="col-sm-3 index-register">
-                        {% if post.register %}<a class="btn btn-info" href="{{post.register}}" role="button"><i class="fa fa-sign-in"></i> Register</a>{% endif %}
+                    {% if post.register %}
+                    <div class="col-sm-3 index-register text-right hidden-xs">
+                        <a class="btn btn-info" href="{{post.register}}" role="button"><i class="fa fa-sign-in"></i> Register</a>
                     </div>
+                    <div class="col-sm-3 index-register visible-xs">
+                        <a class="btn btn-info" href="{{post.register}}" role="button"><i class="fa fa-sign-in"></i> Register</a>
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
