@@ -10,9 +10,6 @@ highlighter: pygments
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
 title : CoderCamp
 tagline: Hamilton's Unconference
 description: "CoderCamp Hamilton is for local software developers to learn tools, techniques, and technologies from one another in a casual and friendly setting."
@@ -25,3 +22,5 @@ author :
 
 # This is used in the Atom & RSS feeds and in the sitemap
 production_url: http://www.codercamphamilton.com
+rss_path: /rss.xml
+atom_path: /atom.xml
