@@ -1,0 +1,12 @@
+---
+layout: event
+time: 6:30pm to 9:00pm
+location: The attic of Radius when it was a cafe and before it was rennovated.
+register:
+---
+
+Matt Grande will talk about RavenDB, a document based data store for .Net.  He will start with a brief intro to document DBs, 
+why you would use them, then some code samples and such.
+
+Brian Graham will talk about cool stuff you can do with bitwise operations, including a bit about their origins, when to use them 
+and when not to use them. [slides](https://docs.google.com/presentation/d/1fbuEZSrllEd6Gyld1PLc-sW71U9bM14kSJo5Wm0CoW0/edit?usp=sharing)
