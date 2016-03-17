@@ -1,5 +1,7 @@
 # CoderCamp Hamilton website
 
+[![Join the chat at https://gitter.im/Codercamp/codercamp.github.io](https://badges.gitter.im/Codercamp/codercamp.github.io.svg)](https://gitter.im/Codercamp/codercamp.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Installing Jekyll
 
 1. Install Ruby 2.1 ([Linux](https://www.ruby-lang.org/en/documentation/installation/), [Mac](https://gorails.com/setup/osx/10.10-yosemite), [Windows](http://rubyinstaller.org/))
