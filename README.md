@@ -14,7 +14,7 @@
 GitHub will do this automatically when you push, but this allows you to view the site locally before you commit.
 
 1. `bundle install`
-2. `jekyll serve`
+2. `bundle exec jekyll serve`
 
 ## Adding new events
 
