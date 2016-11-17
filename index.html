@@ -9,51 +9,53 @@ tagline: Hamilton, Ontario
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h1><i class="fa fa-code"></i> {{ site.title }}</h1>      
+        <h1><i class="fa fa-code"></i> {{ site.title }}</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">            
-        <p>CoderCamp Hamilton is a monthly meetup / mini-conference for local software developers to learn tools, techniques, and technologies from 
-           one another in a casual and friendly setting. <span class="hidden-xs">We meet to talk about 
-           coding, software development, and technology to learn from each other and get better at 
+      <div class="col-sm-12">
+        <p>CoderCamp Hamilton is a monthly meetup / mini-conference for local software developers to learn tools, techniques, and technologies from
+           one another in a casual and friendly setting. <span class="hidden-xs">We meet to talk about
+           coding, software development, and technology to learn from each other and get better at
            what we do in the process.</span></p>
       </div>
     </div>
   </div>
-</div>        
-        
+</div>
+
 <div class="container">
     <div class="content">
         <div class="row">
             <div class="col-md-6">
-                <h2><i class="fa fa-info-circle"></i> About CoderCamp Hamilton</h2>    
-                
+                <h2><i class="fa fa-info-circle"></i> About CoderCamp Hamilton</h2>
+
                 <p>CoderCamp meets monthly in local pubs in Hamilton, Ontario.</p>
-                
-                <p>We have a projector and screen set up for people to give presentations. We try to 
-                    have a few speakers lined up in advance to give the event structure, but there is 
-                    usually room for “open mic” presentations or discussions if you’re interested in 
+
+                <p>We have a projector and screen set up for people to give presentations. We try to
+                    have a few speakers lined up in advance to give the event structure, but there is
+                    usually room for “open mic” presentations or discussions if you’re interested in
                     sharing. We welcome you to come, talk, discuss, share, or just sit quietly and listen.</p>
-                
-                <p>We are an <a href="/conduct.html">inclusive group</a> that welcomes students, 
-                professional developers, freelancers and entrepreneurs. Come out and help build a strong 
+
+                <p>We are an <a href="/conduct.html">inclusive group</a> that welcomes students,
+                professional developers, freelancers and entrepreneurs. Come out and help build a strong
                 tech community in the Greater Hamilton area.</p>
-                
-                <p>CoderCamp Hamilton is organized by <a href="http://www.twitter.com/AJBovaird">AJ Bovaird</a> 
-                and <a href="http://www.twitter.com/bpoetz">Bryan Poetz</a>, but CoderCamp depends on the 
-                tech community in Hamilton for support and talks. If you are working on something cool or 
-                have something you would like to talk about, we would love to 
-                <a href="mailto:codercamphamilton@gmail.com">hear from you</a>.</p>                        
-                
+
+                <p>CoderCamp Hamilton is organized by <a href="http://www.twitter.com/rprouse">Rob Prouse</a>
+                and <a href="http://www.twitter.com/bpoetz">Bryan Poetz</a> with the help of a small army of
+                <a href="http://harrypotter.wikia.com/wiki/House-elf">House-Elves</a> including
+                <a href="http://www.twitter.com/AJBovaird">AJ Bovaird</a>, but CoderCamp depends on the
+                tech community in Hamilton for support and talks. If you are working on something cool or
+                have something you would like to talk about, we would love to
+                <a href="mailto:codercamphamilton@gmail.com">hear from you</a>.</p>
+
                 <p class="text-right hidden-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
                 <p class="visible-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
-                
+
             </div>
             <div class="col-md-6">
-                <h2><i class="fa fa-calendar-check-o"></i> Upcoming Events</h2>                
-                
-                {% for post in site.posts limit:1 %}
+                <h2><i class="fa fa-calendar-check-o"></i> Upcoming Events</h2>
+
+                {% for post in site.posts limit:2 %}
                 <div class="row">
                     <div class="col-sm-9">
                         <h3 class="index-post"><a href="{{ post.url }}" title="More info on {{post.title}}"><i class="fa fa-code"></i> {{ post.title }}</a></h3>
@@ -71,7 +73,7 @@ tagline: Hamilton, Ontario
                 </div>
                 {% endfor %}
             </div>
-        </div>       
-        
+        </div>
+
     </div>
 </div>
