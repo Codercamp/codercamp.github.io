@@ -43,13 +43,3 @@ Matt Grande is going to come tell us more about the HSR Real Time Data Hackathon
 Bryan will also providing a brief update on the Coderetreat Evening being planned for July 23rd.
 ```
 
-## Displaying more than one event
-
-The front page of the site assumes that there is only one upcoming event. On occasions where there is more than one event, edit `index.html` and change the limit in the line;
-
-```
-{% for post in site.posts limit:1 %}
-```
-
-Once the events have passed, don't forget to change it back.
-
