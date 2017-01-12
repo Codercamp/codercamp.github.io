@@ -1,6 +1,6 @@
 # CoderCamp Hamilton website
 
-[![Join the chat at https://gitter.im/Codercamp/codercamp.github.io](https://badges.gitter.im/Codercamp/codercamp.github.io.svg)](https://gitter.im/Codercamp/codercamp.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://codercampslackin.azurewebsites.net/](https://codercampslackin.azurewebsites.net/badge.svg)](https://codercampslackin.azurewebsites.net/)
 
 ## Installing Jekyll
 
