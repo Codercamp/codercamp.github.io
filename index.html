@@ -45,36 +45,43 @@ tagline: Hamilton, Ontario
                 <a href="http://harrypotter.wikia.com/wiki/House-elf">House-Elves</a> including
                 <a href="http://www.twitter.com/AJBovaird">AJ Bovaird</a>, but CoderCamp depends on the
                 tech community in Hamilton for support and talks. If you are working on something cool or
-                have something you would like to talk about, we would love to
-                <a href="mailto:codercamphamilton@gmail.com">hear from you</a>.</p>
+                have something you would like to talk about, join our
+                <a href="https://codercampslackin.azurewebsites.net/">Slack channel</a> and tell us about it.</p>
 
-                <p class="text-right hidden-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
-                <p class="visible-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
-
-            </div>
-            <div id="eventHolder" class="col-md-6" style="display:none">
-                <h2><i class="fa fa-calendar-check-o"></i> Upcoming Events</h2>
-
-                {% for post in site.posts reversed limit:4 %}
-                <div class="row upcoming-events" data-date="{{ post.date }}">
-                    <div class="col-sm-9">
-                        <h3 class="index-post"><a href="{{ post.url }}" title="More info on {{post.title}}"><i class="fa fa-code"></i> {{ post.title }}</a></h3>
-                        <p class="index-info"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}{% if post.time %}&nbsp;&nbsp; <i class="fa fa-clock-o"></i> {{ post.time }}{% endif %}<br />
-                        <i class="fa fa-map-marker"></i> {{ post.location }}</p>
+                <div class="row">
+                    <div class="col-sm-6"><script async defer src="https://codercampslackin.azurewebsites.net/slackin.js?"></script></div>
+                    <div class="col-sm-6">
+                        <p class="text-right hidden-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
+                        <p class="visible-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
                     </div>
-                    {% if post.register %}
-                    <div class="col-sm-3 index-register text-right hidden-xs">
-                        <a class="btn btn-info" href="{{post.register}}" role="button"><i class="fa fa-sign-in"></i> Register</a>
-                    </div>
-                    <div class="col-sm-3 index-register visible-xs">
-                        <a class="btn btn-info" href="{{post.register}}" role="button"><i class="fa fa-sign-in"></i> Register</a>
-                    </div>
-                    {% endif %}
                 </div>
-                {% endfor %}
+
             </div>
-            <noscript>
-                <div class="col-md-6">
+
+            <div class="col-md-6">
+                <div id="eventHolder" style="display:none">
+                    <h2><i class="fa fa-calendar-check-o"></i> Upcoming Events</h2>
+
+                    {% for post in site.posts reversed limit:4 %}
+                    <div class="row upcoming-events" data-date="{{ post.date }}">
+                        <div class="col-sm-9">
+                            <h3 class="index-post"><a href="{{ post.url }}" title="More info on {{post.title}}"><i class="fa fa-code"></i> {{ post.title }}</a></h3>
+                            <p class="index-info"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}{% if post.time %}&nbsp;&nbsp; <i class="fa fa-clock-o"></i> {{ post.time }}{% endif %}<br />
+                            <i class="fa fa-map-marker"></i> {{ post.location }}</p>
+                        </div>
+                        {% if post.register %}
+                        <div class="col-sm-3 index-register text-right hidden-xs">
+                            <a class="btn btn-info" href="{{post.register}}" role="button"><i class="fa fa-sign-in"></i> Register</a>
+                        </div>
+                        <div class="col-sm-3 index-register visible-xs">
+                            <a class="btn btn-info" href="{{post.register}}" role="button"><i class="fa fa-sign-in"></i> Register</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <noscript>
                     <h2><i class="fa fa-calendar-check-o"></i> Upcoming Events</h2>
 
                     {% for post in site.posts reversed limit:4 %}
@@ -94,8 +101,40 @@ tagline: Hamilton, Ontario
                         {% endif %}
                     </div>
                     {% endfor %}
+                </noscript>
+
+
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <h2><i class="fa fa-envelope-o"></i> Join the Mailing List</h2>
+
+                    <form action="//codercamphamilton.us13.list-manage.com/subscribe/post?u=c267a7596ad080511c5bdcd5e&amp;id=99c1648a30" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                        <div class="form-group form-group-sm">
+                            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email Address">
+                        </div>
+                        <div class="form-group form-group-sm">
+                            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">
+                        </div>
+                        <div class="form-group form-group-sm">
+                            <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="Last Name">
+                        </div>
+
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c267a7596ad080511c5bdcd5e_99c1648a30" tabindex="-1" value=""></div>
+                        <div class="text-right">
+                            <button class="btn btn-info" type="submit" name="subscribe"><i class="fa fa-hand-o-right"></i> Subscribe</button>
+                        </div>
+                    </form>
                 </div>
-            </noscript>
+
+                <!--End mc_embed_signup-->
+            </div>
         </div>
 
     </div>
