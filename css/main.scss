@@ -4,7 +4,7 @@
 
 $unused: false; // So I can see the color below in VS Code
 
-// SASS Colors 
+// SASS Colors
 
 $color-primary-0: #5F000B;	// Main Primary color */
 $color-primary-1: #A01324;
@@ -49,11 +49,15 @@ body {
   min-width: 320px;
 }
 
+#mc_embed_signup {
+    margin-top: 50px;
+}
+
 .content {
   padding: 40px 15px;
 }
 
-.navbar {    
+.navbar {
   min-width: 320px;
 }
 
@@ -75,12 +79,12 @@ body {
 
 .index-info {
     color: #666;
-    margin: 10px 0 5px 5px;    
+    margin: 10px 0 5px 5px;
     font-size: 80%;
 }
 
 .index-register {
-    margin: 10px 0 5px 0;    
+    margin: 10px 0 5px 0;
 }
 
 //==============================
@@ -91,8 +95,8 @@ body {
 }
 
 .events-info {
-    font-size: 80%;   
-    color: #666; 
+    font-size: 80%;
+    color: #666;
 }
 
 //==============================
