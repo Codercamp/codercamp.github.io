@@ -142,14 +142,18 @@ tagline: Hamilton, Ontario
 
 
 <script type="text/javascript">
-    window.onload = function(){
-        var today = new Date().toISOString().slice(0,10);//Only compare the days, ignoring time
-        $('.upcoming-events').each(function(_,event){
-            var eventDate = $(event).data('date').slice(0,10);
-            if (eventDate < today){
-                $(event).hide();
+    function displayCurrentEvents() {
+        var today = new Date().toISOString().slice(0,10),//Only compare the days, ignoring time
+            events = document.querySelectorAll('.upcoming-events'),
+            eventList = document.querySelector('#eventHolder');
+        
+        events.forEach(function(event) {
+            var eventDate = event.dataset.date.slice(0,10);
+            if (eventDate < today) {
+                event.style.display = 'none';
             }
         });
-        $('#eventHolder').show();
-    };
+        eventList.style.display = 'block';
+    }
+    displayCurrentEvents();
 </script>
