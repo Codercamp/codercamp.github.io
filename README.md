@@ -48,7 +48,7 @@ Do this if you want to develop in a Docker container using VS Code.
 
 5. Open the terminal in VS Code to a bash prompt within the container by clicking on **Terminal > New Terminal**
 
-6. In the terminal, type `bundle install` then `bundle exec jekyll serve` to build and run the web site. (See below)
+6. In the terminal, type `bundle exec jekyll serve` to build and run the web site. (See below)
 
 7. Open the web site at [http://localhost:4000](http://localhost:4000).
 
