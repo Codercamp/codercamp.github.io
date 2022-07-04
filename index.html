@@ -49,8 +49,7 @@ tagline: Hamilton, Ontario
                 <a href="https://codercampslackin.azurewebsites.net/">Slack channel</a> and tell us about it.</p>
 
                 <div class="row">
-                    <div class="col-sm-6"><script async defer src="https://codercampslackin.azurewebsites.net/slackin.js?"></script></div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <p class="text-right hidden-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
                         <p class="visible-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-hand-paper-o"></i> Volunteer</a></p>
                     </div>
@@ -103,34 +102,21 @@ tagline: Hamilton, Ontario
                     {% endfor %}
                 </noscript>
 
-
-                <!-- Begin MailChimp Signup Form -->
                 <div id="mc_embed_signup">
-                    <h2><i class="fa fa-envelope-o"></i> Join the Mailing List</h2>
+                    <h2><i class="fa fa-slack"></i> Join us on Slack</h2>
 
-                    <form action="//codercamphamilton.us13.list-manage.com/subscribe/post?u=c267a7596ad080511c5bdcd5e&amp;id=99c1648a30" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <p>
+                        When we are not getting together once a month, we hang out
+                        and chat in Slack. Please join us.
+                    </p>
 
-                        <div class="form-group form-group-sm">
-                            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email Address">
+                    <div class="row">
+                        <div class="col-sm-6"><script async defer src="https://codercampslackin.azurewebsites.net/slackin.js?"></script></div>
+                        <div class="col-sm-6">
+                            <p class="text-right hidden-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-slack"></i> Join Slack</a></p>
+                            <p class="visible-xs"><a class="btn btn-info" href="mailto:codercamphamilton@gmail.com" role="button"><i class="fa fa-slack"></i> Join Slack</a></p>
                         </div>
-                        <div class="form-group form-group-sm">
-                            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First Name">
-                        </div>
-                        <div class="form-group form-group-sm">
-                            <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="Last Name">
-                        </div>
-
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c267a7596ad080511c5bdcd5e_99c1648a30" tabindex="-1" value=""></div>
-                        <div class="text-right">
-                            <button class="btn btn-info" type="submit" name="subscribe"><i class="fa fa-hand-o-right"></i> Subscribe</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
 
                 <!--End mc_embed_signup-->
@@ -146,7 +132,7 @@ tagline: Hamilton, Ontario
         var today = new Date().toISOString().slice(0,10),//Only compare the days, ignoring time
             events = document.querySelectorAll('.upcoming-events'),
             eventList = document.querySelector('#eventHolder');
-        
+
         events.forEach(function(event) {
             var eventDate = event.dataset.date.slice(0,10);
             if (eventDate < today) {
