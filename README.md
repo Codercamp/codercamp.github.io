@@ -1,6 +1,6 @@
 # CoderCamp Hamilton website
 
-[![Join the chat at https://codercampslackin.azurewebsites.net/](https://codercampslackin.azurewebsites.net/badge.svg)](https://codercampslackin.azurewebsites.net/)
+[Join the chat on Slack](https://join.slack.com/t/hamontcc/shared_invite/zt-1kb43vnf4-kb1o7ZWAwmhbP3fZ79NvpA)
 
 To get started developing, you have two options. You can develop in a Docker Container using VS Code, or you can install Ruby locally and develop locally.
 
