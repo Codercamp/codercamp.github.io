@@ -13,3 +13,6 @@ Thumbs.db
 .bundle
 Gemfile.lock
 jekyll
+
+# Editor files
+.idea
